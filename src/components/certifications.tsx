@@ -1,6 +1,5 @@
 "use client";
 
-import { Award } from "lucide-react";
 import { certifications } from "@/data/portfolio-data";
 import SectionReveal, {
   StaggerContainer,
@@ -13,7 +12,7 @@ export default function Certifications() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <SectionReveal>
           <div className="flex items-center gap-4 mb-4">
-            <span className="text-sm font-mono text-[var(--accent-cyan)]">07.</span>
+            <span className="text-sm font-mono text-[var(--accent)]">07.</span>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
               Certifications
             </h2>
@@ -25,10 +24,10 @@ export default function Certifications() {
           {certifications.map((cert) => (
             <StaggerItem key={cert.title}>
               <div className="glass rounded-xl p-5 card-hover group h-full">
-                <div className="p-2.5 rounded-lg bg-gradient-to-br from-blue-500/10 to-cyan-500/10 w-fit mb-4 group-hover:from-blue-500/20 group-hover:to-cyan-500/20 transition-colors duration-300">
+                <div className="p-2.5 rounded-lg bg-[var(--accent-subtle)] w-fit mb-4 group-hover:bg-emerald-500/15 transition-colors duration-300">
                   <cert.icon
                     size={20}
-                    className="text-[var(--accent-blue)]"
+                    className="text-[var(--accent)]"
                   />
                 </div>
                 <h3 className="text-sm font-semibold text-[var(--text-primary)] mb-1.5 leading-snug">

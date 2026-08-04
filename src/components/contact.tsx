@@ -41,7 +41,7 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <SectionReveal>
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-sm font-mono text-[var(--accent-cyan)] mb-4 block">
+            <span className="text-sm font-mono text-[var(--accent)] mb-4 block">
               09. What&apos;s Next?
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
@@ -93,7 +93,7 @@ export default function Contact() {
                       onChange={(e) =>
                         setFormState({ ...formState, name: e.target.value })
                       }
-                      className="w-full px-4 py-3 rounded-lg bg-white/[0.04] border border-[var(--border-subtle)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/20 transition-all text-sm"
+                      className="w-full px-4 py-3 rounded-lg bg-white/[0.04] border border-[var(--border-subtle)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] focus:outline-none focus:border-emerald-500/40 focus:ring-1 focus:ring-emerald-500/15 transition-all text-sm"
                       placeholder="Your name"
                     />
                   </div>
@@ -112,7 +112,7 @@ export default function Contact() {
                       onChange={(e) =>
                         setFormState({ ...formState, email: e.target.value })
                       }
-                      className="w-full px-4 py-3 rounded-lg bg-white/[0.04] border border-[var(--border-subtle)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/20 transition-all text-sm"
+                      className="w-full px-4 py-3 rounded-lg bg-white/[0.04] border border-[var(--border-subtle)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] focus:outline-none focus:border-emerald-500/40 focus:ring-1 focus:ring-emerald-500/15 transition-all text-sm"
                       placeholder="your@email.com"
                     />
                   </div>
@@ -131,18 +131,18 @@ export default function Contact() {
                       onChange={(e) =>
                         setFormState({ ...formState, message: e.target.value })
                       }
-                      className="w-full px-4 py-3 rounded-lg bg-white/[0.04] border border-[var(--border-subtle)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/20 transition-all text-sm resize-none"
+                      className="w-full px-4 py-3 rounded-lg bg-white/[0.04] border border-[var(--border-subtle)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] focus:outline-none focus:border-emerald-500/40 focus:ring-1 focus:ring-emerald-500/15 transition-all text-sm resize-none"
                       placeholder="Your message..."
                     />
                   </div>
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-medium text-sm hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
+                    className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-[var(--accent)] text-[var(--bg-primary)] font-medium text-sm hover:bg-[var(--accent-muted)] transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? (
                       <>
-                        <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                        <div className="w-4 h-4 border-2 border-[var(--bg-primary)]/30 border-t-[var(--bg-primary)] rounded-full animate-spin" />
                         Sending...
                       </>
                     ) : (
@@ -186,8 +186,8 @@ export default function Contact() {
                 href={`mailto:${heroData.socials.email}`}
                 className="glass rounded-xl p-4 flex items-center gap-3 card-hover group block"
               >
-                <div className="p-2 rounded-lg bg-blue-500/10">
-                  <Mail size={18} className="text-[var(--accent-blue)]" />
+                <div className="p-2 rounded-lg bg-[var(--accent-subtle)]">
+                  <Mail size={18} className="text-[var(--accent)]" />
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-sm font-medium text-[var(--text-primary)]">
@@ -209,8 +209,8 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 className="glass rounded-xl p-4 flex items-center gap-3 card-hover group block"
               >
-                <div className="p-2 rounded-lg bg-blue-500/10">
-                  <LinkedinIcon size={18} className="text-[var(--accent-blue)]" />
+                <div className="p-2 rounded-lg bg-[var(--accent-subtle)]">
+                  <LinkedinIcon size={18} className="text-[var(--accent)]" />
                 </div>
                 <div className="flex-1">
                   <p className="text-sm font-medium text-[var(--text-primary)]">
@@ -230,8 +230,8 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 className="glass rounded-xl p-4 flex items-center gap-3 card-hover group block"
               >
-                <div className="p-2 rounded-lg bg-blue-500/10">
-                  <GithubIcon size={18} className="text-[var(--accent-blue)]" />
+                <div className="p-2 rounded-lg bg-[var(--accent-subtle)]">
+                  <GithubIcon size={18} className="text-[var(--accent)]" />
                 </div>
                 <div className="flex-1">
                   <p className="text-sm font-medium text-[var(--text-primary)]">
@@ -251,8 +251,8 @@ export default function Contact() {
                 download
                 className="glass rounded-xl p-4 flex items-center gap-3 card-hover group block gradient-border"
               >
-                <div className="p-2 rounded-lg bg-gradient-to-br from-blue-500/10 to-cyan-500/10">
-                  <Download size={18} className="text-[var(--accent-cyan)]" />
+                <div className="p-2 rounded-lg bg-[var(--accent-subtle)]">
+                  <Download size={18} className="text-[var(--accent)]" />
                 </div>
                 <div className="flex-1">
                   <p className="text-sm font-medium text-[var(--text-primary)]">

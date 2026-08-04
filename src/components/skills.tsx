@@ -12,7 +12,7 @@ export default function Skills() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <SectionReveal>
           <div className="flex items-center gap-4 mb-4">
-            <span className="text-sm font-mono text-[var(--accent-cyan)]">02.</span>
+            <span className="text-sm font-mono text-[var(--accent)]">02.</span>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
               Skills & Technologies
             </h2>
@@ -33,10 +33,10 @@ export default function Skills() {
               <div className="glass rounded-xl p-6 h-full card-hover group">
                 {/* Category Header */}
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="p-2 rounded-lg bg-gradient-to-br from-blue-500/10 to-cyan-500/10 group-hover:from-blue-500/20 group-hover:to-cyan-500/20 transition-colors duration-300">
+                  <div className="p-2 rounded-lg bg-[var(--accent-subtle)] group-hover:bg-emerald-500/15 transition-colors duration-300">
                     <category.icon
                       size={20}
-                      className="text-[var(--accent-blue)]"
+                      className="text-[var(--accent)]"
                     />
                   </div>
                   <h3 className="text-lg font-semibold text-[var(--text-primary)]">
@@ -54,7 +54,7 @@ export default function Skills() {
                       <div className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-white/[0.04] transition-colors duration-200 group/skill">
                         <skill.icon
                           size={14}
-                          className="text-[var(--text-muted)] group-hover/skill:text-[var(--accent-cyan)] transition-colors duration-200"
+                          className="text-[var(--text-muted)] group-hover/skill:text-[var(--accent)] transition-colors duration-200"
                         />
                         <span className="text-sm text-[var(--text-secondary)] group-hover/skill:text-[var(--text-primary)] transition-colors duration-200">
                           {skill.name}

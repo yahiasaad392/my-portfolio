@@ -1,6 +1,5 @@
 "use client";
 
-import { Briefcase, GraduationCap } from "lucide-react";
 import { experiences } from "@/data/portfolio-data";
 import SectionReveal from "@/components/effects/section-reveal";
 
@@ -10,7 +9,7 @@ export default function Experience() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <SectionReveal>
           <div className="flex items-center gap-4 mb-4">
-            <span className="text-sm font-mono text-[var(--accent-cyan)]">03.</span>
+            <span className="text-sm font-mono text-[var(--accent)]">03.</span>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
               Experience & Training
             </h2>
@@ -21,14 +20,14 @@ export default function Experience() {
         <div className="mt-12 max-w-3xl">
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-[19px] top-2 bottom-2 w-px bg-gradient-to-b from-blue-500/40 via-cyan-500/20 to-transparent" />
+            <div className="absolute left-[19px] top-2 bottom-2 w-px bg-gradient-to-b from-emerald-500/30 via-[var(--border-light)] to-transparent" />
 
             <div className="space-y-10">
               {experiences.map((exp, index) => (
                 <SectionReveal key={index} delay={index * 0.1}>
                   <div className="relative pl-14 group">
                     {/* Timeline dot */}
-                    <div className="absolute left-2.5 top-1.5 w-4 h-4 rounded-full border-2 border-blue-500/60 bg-[var(--bg-primary)] group-hover:border-blue-400 group-hover:shadow-[0_0_12px_rgba(59,130,246,0.3)] transition-all duration-300" />
+                    <div className="absolute left-2.5 top-1.5 w-4 h-4 rounded-full border-2 border-emerald-500/50 bg-[var(--bg-primary)] group-hover:border-emerald-400 group-hover:shadow-[0_0_12px_rgba(16,185,129,0.2)] transition-all duration-300" />
 
                     {/* Card */}
                     <div className="glass rounded-xl p-6 card-hover">
@@ -37,7 +36,7 @@ export default function Experience() {
                           <h3 className="text-lg font-semibold text-[var(--text-primary)]">
                             {exp.title}
                           </h3>
-                          <p className="text-[var(--accent-cyan)] text-sm font-medium mt-0.5">
+                          <p className="text-[var(--accent)] text-sm font-medium mt-0.5">
                             {exp.company}
                           </p>
                         </div>

@@ -22,7 +22,7 @@ export default function FeaturedProject() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <SectionReveal>
           <div className="flex items-center gap-4 mb-4">
-            <span className="text-sm font-mono text-[var(--accent-cyan)]">04.</span>
+            <span className="text-sm font-mono text-[var(--accent)]">04.</span>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
               Featured Project
             </h2>
@@ -33,7 +33,7 @@ export default function FeaturedProject() {
         <SectionReveal delay={0.2}>
           <div className="mt-12 relative group">
             {/* Background glow */}
-            <div className="absolute -inset-2 rounded-3xl bg-gradient-to-r from-blue-500/5 to-cyan-500/5 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+            <div className="absolute -inset-2 rounded-3xl bg-emerald-500/[0.03] blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
 
             <div className="relative glass rounded-2xl overflow-hidden gradient-border">
               <div className="grid lg:grid-cols-2 gap-0">
@@ -58,7 +58,7 @@ export default function FeaturedProject() {
 
                 {/* Content */}
                 <div className="p-6 sm:p-8 lg:p-10 flex flex-col justify-center">
-                  <div className="text-xs font-mono text-[var(--accent-cyan)] mb-3 tracking-wider uppercase">
+                  <div className="text-xs font-mono text-[var(--accent)] mb-3 tracking-wider uppercase">
                     Enterprise Software Platform
                   </div>
 
@@ -81,7 +81,7 @@ export default function FeaturedProject() {
                         key={feature}
                         className="flex items-center gap-2 text-xs text-[var(--text-secondary)]"
                       >
-                        <span className="text-[var(--accent-blue)]">
+                        <span className="text-[var(--accent)]">
                           {featureIcons[feature] || <Shield size={14} />}
                         </span>
                         {feature}
@@ -94,7 +94,7 @@ export default function FeaturedProject() {
                     {featuredProject.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="px-2.5 py-1 text-xs rounded-md bg-blue-500/10 text-blue-300/90 font-medium"
+                        className="px-2.5 py-1 text-xs rounded-md bg-[var(--accent-subtle)] text-emerald-300/90 font-medium"
                       >
                         {tech}
                       </span>
@@ -106,7 +106,7 @@ export default function FeaturedProject() {
                     href={featuredProject.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-medium text-sm hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105 w-fit"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[var(--accent)] text-[var(--bg-primary)] font-medium text-sm hover:bg-[var(--accent-muted)] transition-all duration-300 hover:scale-[1.03] w-fit"
                   >
                     Visit Project
                     <ExternalLink size={14} />

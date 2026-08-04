@@ -64,7 +64,7 @@ export default function Navbar() {
               className="text-lg font-semibold tracking-tight"
               whileHover={{ scale: 1.02 }}
             >
-              <span className="gradient-text">Y</span>
+              <span className="text-[var(--accent)]">Y</span>
               <span className="text-[var(--text-primary)]">ahia</span>
               <span className="text-[var(--text-muted)]">.</span>
             </motion.a>
@@ -102,7 +102,7 @@ export default function Navbar() {
               <a
                 href="/Yahia_Saad_CV.pdf"
                 download
-                className="hidden lg:inline-flex items-center gap-2 px-5 py-2 text-sm font-medium rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300 hover:scale-105"
+                className="hidden lg:inline-flex items-center gap-2 px-5 py-2 text-sm font-medium rounded-full bg-[var(--accent)] text-[var(--bg-primary)] hover:bg-[var(--accent-muted)] transition-all duration-300 hover:scale-[1.03]"
               >
                 Download CV
               </a>
@@ -145,7 +145,7 @@ export default function Navbar() {
               <a
                 href="/Yahia_Saad_CV.pdf"
                 download
-                className="block mt-4 text-center px-5 py-3 text-sm font-medium rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white"
+                className="block mt-4 text-center px-5 py-3 text-sm font-medium rounded-full bg-[var(--accent)] text-[var(--bg-primary)]"
               >
                 Download CV
               </a>

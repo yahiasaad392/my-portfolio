@@ -32,7 +32,7 @@ export default function Hero() {
           className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full opacity-20 blur-3xl"
           style={{
             background:
-              "radial-gradient(circle, rgba(59,130,246,0.2) 0%, transparent 60%)",
+              "radial-gradient(circle, rgba(16,185,129,0.1) 0%, transparent 60%)",
           }}
         />
       </div>
@@ -86,7 +86,7 @@ export default function Hero() {
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: -20, opacity: 0 }}
                 transition={{ duration: 0.4 }}
-                className="text-base sm:text-lg font-mono text-[var(--accent-cyan)]"
+                className="text-base sm:text-lg font-mono text-[var(--accent)]"
               >
                 {heroData.subtitles[subtitleIndex]}
               </motion.p>
@@ -112,7 +112,7 @@ export default function Hero() {
               <a
                 href="/Yahia_Saad_CV.pdf"
                 download
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-medium text-sm hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[var(--accent)] text-[var(--bg-primary)] font-medium text-sm hover:bg-[var(--accent-muted)] transition-all duration-300 hover:scale-[1.03]"
               >
                 <Download size={16} />
                 Download CV
@@ -191,7 +191,7 @@ export default function Hero() {
           >
             <div className="relative">
               {/* Glow behind image */}
-              <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-blue-500/20 to-cyan-500/20 blur-3xl opacity-60" />
+              <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-emerald-500/10 to-transparent blur-3xl opacity-60" />
 
               {/* Image container */}
               <div className="relative w-72 h-80 sm:w-80 sm:h-96 lg:w-96 lg:h-[480px] rounded-2xl overflow-hidden gradient-border">

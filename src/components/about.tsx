@@ -13,7 +13,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <SectionReveal>
           <div className="flex items-center gap-4 mb-4">
-            <span className="text-sm font-mono text-[var(--accent-cyan)]">01.</span>
+            <span className="text-sm font-mono text-[var(--accent)]">01.</span>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
               About Me
             </h2>
@@ -62,7 +62,7 @@ export default function About() {
           >
             <div className="relative group">
               {/* Glow */}
-              <div className="absolute -inset-3 rounded-2xl bg-gradient-to-br from-blue-500/10 to-cyan-500/10 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+              <div className="absolute -inset-3 rounded-2xl bg-emerald-500/5 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
 
               <div className="relative w-64 h-80 sm:w-72 sm:h-96 rounded-2xl overflow-hidden gradient-border">
                 <Image

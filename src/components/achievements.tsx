@@ -12,7 +12,7 @@ export default function Achievements() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <SectionReveal>
           <div className="flex items-center gap-4 mb-4">
-            <span className="text-sm font-mono text-[var(--accent-cyan)]">08.</span>
+            <span className="text-sm font-mono text-[var(--accent)]">08.</span>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
               Achievements
             </h2>
@@ -27,10 +27,10 @@ export default function Achievements() {
           {achievements.map((achievement) => (
             <StaggerItem key={achievement.title}>
               <div className="glass rounded-xl p-5 card-hover group h-full flex flex-col">
-                <div className="p-2.5 rounded-lg bg-gradient-to-br from-blue-500/10 to-purple-500/10 w-fit mb-4 group-hover:from-blue-500/20 group-hover:to-purple-500/20 transition-colors duration-300">
+                <div className="p-2.5 rounded-lg bg-[var(--accent-subtle)] w-fit mb-4 group-hover:bg-emerald-500/15 transition-colors duration-300">
                   <achievement.icon
                     size={20}
-                    className="text-[var(--accent-blue)] group-hover:text-[var(--accent-cyan)] transition-colors duration-300"
+                    className="text-[var(--accent)] group-hover:text-emerald-400 transition-colors duration-300"
                   />
                 </div>
                 <h3 className="text-sm font-semibold text-[var(--text-primary)] mb-2">

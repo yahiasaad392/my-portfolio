@@ -12,7 +12,7 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <SectionReveal>
           <div className="flex items-center gap-4 mb-4">
-            <span className="text-sm font-mono text-[var(--accent-cyan)]">05.</span>
+            <span className="text-sm font-mono text-[var(--accent)]">05.</span>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
               Projects
             </h2>
@@ -67,7 +67,7 @@ export default function Projects() {
 
                 {/* Content */}
                 <div className="p-6 flex flex-col flex-1">
-                  <h3 className="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:gradient-text transition-all duration-300">
+                  <h3 className="text-lg font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[var(--accent)] transition-colors duration-300">
                     {project.title}
                   </h3>
 
@@ -93,7 +93,7 @@ export default function Projects() {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-sm text-[var(--text-secondary)] hover:text-[var(--accent-cyan)] transition-colors font-medium"
+                      className="inline-flex items-center gap-1.5 text-sm text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors font-medium"
                     >
                       <ExternalLink size={14} />
                       Live Demo
