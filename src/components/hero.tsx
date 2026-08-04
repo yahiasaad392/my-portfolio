@@ -97,7 +97,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.65 }}
-              className="text-[var(--text-secondary)] text-base sm:text-lg leading-relaxed max-w-xl mb-8"
+              className="text-[var(--text-secondary)] text-base sm:text-lg leading-relaxed max-w-xl mb-6"
             >
               {heroData.description}
             </motion.p>
@@ -107,7 +107,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.75 }}
-              className="flex flex-wrap gap-4 mb-8"
+              className="flex flex-wrap gap-3 mb-6"
             >
               <a
                 href="/Yahia_Saad_CV.pdf"

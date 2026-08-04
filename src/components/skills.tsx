@@ -24,15 +24,15 @@ export default function Skills() {
           </p>
         </SectionReveal>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
           {skillCategories.map((category, categoryIndex) => (
             <SectionReveal
               key={category.title}
               delay={categoryIndex * 0.1}
             >
-              <div className="glass rounded-xl p-6 h-full card-hover group">
+              <div className="glass rounded-xl p-5 h-full card-hover group">
                 {/* Category Header */}
-                <div className="flex items-center gap-3 mb-6">
+                <div className="flex items-center gap-3 mb-5">
                   <div className="p-2 rounded-lg bg-[var(--accent-subtle)] group-hover:bg-emerald-500/15 transition-colors duration-300">
                     <category.icon
                       size={20}
@@ -46,12 +46,12 @@ export default function Skills() {
 
                 {/* Skills */}
                 <StaggerContainer
-                  className="space-y-2"
+                  className="space-y-1"
                   staggerDelay={0.05}
                 >
                   {category.skills.map((skill) => (
                     <StaggerItem key={skill.name}>
-                      <div className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-white/[0.04] transition-colors duration-200 group/skill">
+                      <div className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-white/[0.04] transition-colors duration-200 group/skill">
                         <skill.icon
                           size={14}
                           className="text-[var(--text-muted)] group-hover/skill:text-[var(--accent)] transition-colors duration-200"

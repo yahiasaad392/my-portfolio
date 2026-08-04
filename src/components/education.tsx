@@ -19,7 +19,7 @@ export default function Education() {
         </SectionReveal>
 
         <SectionReveal delay={0.2}>
-          <div className="mt-12 max-w-3xl">
+          <div className="mt-10 max-w-3xl">
             <div className="glass rounded-xl p-6 sm:p-8 card-hover group">
               <div className="flex items-start gap-5">
                 {/* Icon */}

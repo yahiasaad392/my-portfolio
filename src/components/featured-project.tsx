@@ -31,7 +31,7 @@ export default function FeaturedProject() {
         </SectionReveal>
 
         <SectionReveal delay={0.2}>
-          <div className="mt-12 relative group">
+          <div className="mt-10 relative group">
             {/* Background glow */}
             <div className="absolute -inset-2 rounded-3xl bg-emerald-500/[0.03] blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
 

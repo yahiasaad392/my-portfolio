@@ -41,7 +41,7 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <SectionReveal>
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-sm font-mono text-[var(--accent)] mb-4 block">
+            <span className="text-sm font-mono text-[var(--accent)] mb-3 block">
               09. What&apos;s Next?
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
@@ -56,7 +56,7 @@ export default function Contact() {
           </div>
         </SectionReveal>
 
-        <div className="grid lg:grid-cols-5 gap-8 max-w-5xl mx-auto">
+        <div className="grid lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
           {/* Contact Form */}
           <SectionReveal delay={0.2} className="lg:col-span-3">
             <div className="glass rounded-2xl p-6 sm:p-8">
@@ -161,14 +161,14 @@ export default function Contact() {
           <SectionReveal delay={0.3} className="lg:col-span-2">
             <div className="space-y-4">
               {/* Photo */}
-              <div className="glass rounded-2xl p-5 flex items-center gap-4">
-                <div className="relative w-14 h-14 rounded-xl overflow-hidden shrink-0">
+              <div className="glass rounded-2xl p-4 flex items-center gap-4">
+                <div className="relative w-12 h-12 rounded-xl overflow-hidden shrink-0">
                   <Image
                     src="/images/photo-1.jpeg"
                     alt="Yahia Saad"
                     fill
                     className="object-cover"
-                    sizes="56px"
+                    sizes="48px"
                   />
                 </div>
                 <div>

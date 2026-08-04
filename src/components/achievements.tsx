@@ -23,7 +23,7 @@ export default function Achievements() {
           </p>
         </SectionReveal>
 
-        <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-12">
+        <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-10">
           {achievements.map((achievement) => (
             <StaggerItem key={achievement.title}>
               <div className="glass rounded-xl p-5 card-hover group h-full flex flex-col">

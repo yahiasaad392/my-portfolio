@@ -17,12 +17,12 @@ export default function Experience() {
           </div>
         </SectionReveal>
 
-        <div className="mt-12 max-w-3xl">
+        <div className="mt-10 max-w-3xl">
           <div className="relative">
             {/* Timeline line */}
             <div className="absolute left-[19px] top-2 bottom-2 w-px bg-gradient-to-b from-emerald-500/30 via-[var(--border-light)] to-transparent" />
 
-            <div className="space-y-10">
+            <div className="space-y-8">
               {experiences.map((exp, index) => (
                 <SectionReveal key={index} delay={index * 0.1}>
                   <div className="relative pl-14 group">

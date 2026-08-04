@@ -21,7 +21,7 @@ export default function About() {
           </div>
         </SectionReveal>
 
-        <div className="grid lg:grid-cols-5 gap-12 lg:gap-16 mt-12">
+        <div className="grid lg:grid-cols-5 gap-10 lg:gap-12 mt-10">
           {/* Text Content */}
           <div className="lg:col-span-3">
             <StaggerContainer className="space-y-5">

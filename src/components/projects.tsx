@@ -24,7 +24,7 @@ export default function Projects() {
           </p>
         </SectionReveal>
 
-        <div className="grid md:grid-cols-2 gap-6 mt-12">
+        <div className="grid md:grid-cols-2 gap-6 mt-10">
           {projects.map((project, index) => (
             <SectionReveal
               key={project.title}
