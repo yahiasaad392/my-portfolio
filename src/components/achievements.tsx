@@ -9,7 +9,7 @@ import SectionReveal, {
 export default function Achievements() {
   return (
     <section className="section-padding relative">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <SectionReveal>
           <div className="flex items-center gap-4 mb-4">
             <span className="text-sm font-mono text-[var(--accent)]">08.</span>

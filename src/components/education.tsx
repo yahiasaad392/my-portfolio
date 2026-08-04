@@ -7,7 +7,7 @@ import SectionReveal from "@/components/effects/section-reveal";
 export default function Education() {
   return (
     <section id="education" className="section-padding relative">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <SectionReveal>
           <div className="flex items-center gap-4 mb-4">
             <span className="text-sm font-mono text-[var(--accent)]">06.</span>
@@ -19,7 +19,7 @@ export default function Education() {
         </SectionReveal>
 
         <SectionReveal delay={0.2}>
-          <div className="mt-10 max-w-3xl">
+          <div className="mt-10 max-w-4xl">
             <div className="glass rounded-xl p-6 sm:p-8 card-hover group">
               <div className="flex items-start gap-5">
                 {/* Icon */}

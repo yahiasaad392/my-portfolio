@@ -6,7 +6,7 @@ import SectionReveal from "@/components/effects/section-reveal";
 export default function Experience() {
   return (
     <section id="experience" className="section-padding relative">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <SectionReveal>
           <div className="flex items-center gap-4 mb-4">
             <span className="text-sm font-mono text-[var(--accent)]">03.</span>
@@ -17,7 +17,7 @@ export default function Experience() {
           </div>
         </SectionReveal>
 
-        <div className="mt-10 max-w-3xl">
+        <div className="mt-10 max-w-4xl">
           <div className="relative">
             {/* Timeline line */}
             <div className="absolute left-[19px] top-2 bottom-2 w-px bg-gradient-to-b from-emerald-500/30 via-[var(--border-light)] to-transparent" />

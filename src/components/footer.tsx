@@ -7,7 +7,7 @@ import { heroData } from "@/data/portfolio-data";
 export default function Footer() {
   return (
     <footer className="border-t border-[var(--border-subtle)] py-10">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-1 text-sm text-[var(--text-muted)]">
             <span>Designed & Built by</span>

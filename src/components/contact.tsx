@@ -38,9 +38,9 @@ export default function Contact() {
 
   return (
     <section id="contact" className="section-padding relative">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <SectionReveal>
-          <div className="text-center max-w-2xl mx-auto mb-12">
+          <div className="text-center max-w-2xl mx-auto mb-10">
             <span className="text-sm font-mono text-[var(--accent)] mb-3 block">
               09. What&apos;s Next?
             </span>
@@ -48,7 +48,7 @@ export default function Contact() {
               Let&apos;s Build Something{" "}
               <span className="gradient-text">Together</span>
             </h2>
-            <p className="text-[var(--text-secondary)] text-base sm:text-lg">
+            <p className="text-[var(--text-secondary)] text-base sm:text-lg leading-relaxed">
               I&apos;m currently open to new opportunities. Whether you have a
               project in mind, a question, or just want to say hello — my inbox
               is always open.
@@ -56,7 +56,7 @@ export default function Contact() {
           </div>
         </SectionReveal>
 
-        <div className="grid lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
+        <div className="grid lg:grid-cols-5 gap-6 w-full">
           {/* Contact Form */}
           <SectionReveal delay={0.2} className="lg:col-span-3">
             <div className="glass rounded-2xl p-6 sm:p-8">
